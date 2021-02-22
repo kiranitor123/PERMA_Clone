@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 nav {
   background-color: red;
 }
@@ -22,22 +23,21 @@ a:hover {
 
 .nav-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.logo,
-.menu-bar,
-.menu-content {
+.menu-bar, .menu-content {
   height: 50px;
 }
 
 .logo {
   width: 40%;
   background-color: black;
+  height: auto;
 }
 
 .menu-bar {
-  width: 60%;
+  width: 100%;
   background-color: white;
 }
 
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .higlights {
-  height: 500px;
+  height: auto;
   width: auto;
   background-color: teal;
 }
@@ -73,11 +73,13 @@ a:hover {
   width: auto;
   height: 2rem;
   background-color: white;
-  display:none;
+  display: none;
 }
 
 .mobile-bar {
   display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .social-icons {
@@ -113,27 +115,34 @@ a:hover {
   font-size: 13px;
 }
 
-.footer-content > div > p {
+.footer-content>div>p {
   margin: 5px 0;
 }
 
-.footer-content > div > a {
+.footer-content>div>a {
   color: #fff;
+}
+
+.higlight-card {
+  height: 200px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .white-bar-links {
     display: block;
   }
-
   .black-bar-links {
     display: block;
   }
-
-  .mobile-bar {
+  .menu-bar {
     display: none;
   }
-
   .footer-content {
     flex-direction: row;
     justify-content: center;
@@ -145,19 +154,15 @@ a:hover {
   .white-bar-links {
     display: block;
   }
-
   .black-bar-links {
     display: block;
   }
-
-  .mobile-bar {
+  .menu-bar, .logo {
     display: none;
   }
-
   .footer-content {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
   }
-
 }
