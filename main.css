@@ -12,6 +12,14 @@ footer {
   background-color: white;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .nav-content {
   display: flex;
   flex-direction: column;
@@ -88,10 +96,30 @@ footer {
   padding-bottom: 2rem;
   text-decoration: none;
 }
+
 .social-icons div a {
   text-decoration: none;
+  font-size: 13px;
+  padding: 0 5px;
 }
 
+.footer-content {
+  background-color: #000;
+  color: #fff;
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+
+.footer-content > div > p {
+  margin: 5px 0;
+}
+
+.footer-content > div > a {
+  color: #fff;
+}
 
 @media only screen and (min-width: 768px) {
   .white-bar-links {
@@ -104,6 +132,12 @@ footer {
 
   .mobile-bar {
     display: none;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
   }
 }
 
@@ -118,6 +152,12 @@ footer {
 
   .mobile-bar {
     display: none;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
 }
