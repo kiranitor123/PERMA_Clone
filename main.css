@@ -26,14 +26,31 @@ a:hover {
   flex-direction: row;
 }
 
-.menu-bar, .menu-content {
-  height: 50px;
+.menu-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-bar-button {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-left: 1px solid pink;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .logo {
   width: 40%;
   background-color: black;
   height: auto;
+  display: flex;
+}
+
+.logo img {
+  width: 66px;
+  height: 16px;
+  margin: auto;
 }
 
 .menu-bar {
@@ -46,7 +63,13 @@ a:hover {
   background-color: yellow;
 }
 
-.higlights {
+.menu-content p {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.highlights {
   height: auto;
   width: auto;
   background-color: teal;
@@ -122,7 +145,7 @@ a:hover {
   color: #fff;
 }
 
-.higlight-card {
+.highlight-card {
   height: 200px;
   background-color: aqua;
   display: flex;
@@ -130,6 +153,10 @@ a:hover {
   justify-content: flex-end;
   margin: 10px;
   padding: 10px;
+}
+
+.highlight-card:first-child {
+  margin-top: 0;
 }
 
 .latest-news h2 {
