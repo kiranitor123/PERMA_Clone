@@ -133,6 +133,33 @@ a:hover {
   padding: 10px;
 }
 
+.latest-news h2 {
+  margin: 10px 20px;
+}
+
+.ln-card {
+  display: flex;
+  margin: 10px 20px;
+}
+
+.ln-card img {
+  width: 5rem;
+  height: 5rem;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.ln-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ln-card-text p,
+.ln-card-text h3 {
+  margin: 0;
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .white-bar-links {
     display: block;
