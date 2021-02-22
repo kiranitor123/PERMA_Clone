@@ -1,3 +1,54 @@
 body {
-  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: red;
+}
+
+footer {
+  height: 200px;
+  width: auto;
+  background-color: white;
+}
+
+.nav-content {
+  display: flex;
+}
+
+.logo,
+.menu-bar,
+.menu-content {
+  height: 50px;
+}
+
+.logo {
+  width: 40%;
+  background-color: black;
+}
+
+.menu-bar {
+  width: 60%;
+  background-color: white;
+}
+
+.menu-content{
+  width: auto;
+  background-color: teal;
+}
+
+.higlights{
+  height: 500px;
+  width: auto;
+  background-color: yellow;
+}
+
+.latest-funding {
+  height: 500px;
+  width: auto;
+  background-color: violet;
+}
+
+.faColor {
+  color: #333333;
 }
