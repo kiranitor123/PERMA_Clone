@@ -14,6 +14,7 @@ footer {
 
 .nav-content {
   display: flex;
+  flex-direction: column;
 }
 
 .logo,
@@ -32,15 +33,15 @@ footer {
   background-color: white;
 }
 
-.menu-content{
-  width: auto;
-  background-color: teal;
-}
-
-.higlights{
-  height: 500px;
+.menu-content {
   width: auto;
   background-color: yellow;
+}
+
+.higlights {
+  height: 500px;
+  width: auto;
+  background-color: teal;
 }
 
 .latest-funding {
@@ -51,4 +52,51 @@ footer {
 
 .faColor {
   color: #333333;
+}
+
+.black-bar-links {
+  width: auto;
+  background-color: black;
+  height: 2rem;
+  display: none;
+}
+
+.white-bar-links {
+  width: auto;
+  height: 2rem;
+  background-color: white;
+  display:none;
+}
+
+.mobile-bar {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .white-bar-links {
+    display: block;
+  }
+
+  .black-bar-links {
+    display: block;
+  }
+
+  .mobile-bar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .white-bar-links {
+    display: block;
+  }
+
+  .black-bar-links {
+    display: block;
+  }
+
+  .mobile-bar {
+    display: none;
+  }
+
 }
