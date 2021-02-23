@@ -1,6 +1,18 @@
 @font-face {
   font-family: "shentox";
-  src: url('Shentox.ttf') format('truetype');
+  src: url('./fonts/Shentox.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "avalon";
+  src: url('./fonts/Avalon.ttf') format('truetype');
+}
+
+.title-red {
+  color: #FF4422;
+  font-family: avalon, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
 }
 
 body {
@@ -291,9 +303,23 @@ a:hover {
   flex-direction: column;
 }
 
-.ln-card-text p, .ln-card-text h3 {
+.ln-card-text p, 
+.ln-card-text h3 {
   margin: 0;
   padding: 0 10px;
+}
+
+.ln-card-text h3 {
+  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ln-card-text p {
+  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
+  font-size: 12px;
+  color: gray;
 }
 
 .lf-card-title {
@@ -420,6 +446,24 @@ a:hover {
   .lf-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .ln-card {
+    flex-direction: column;
+  }
+
+  .ln-card img {
+    height: auto;
+    width: 100%;
+  }
+
+  .ln-card-text h3 {
+    margin-top: 5px;
+  }
+
+  .ln-card-text h3,
+  .ln-card-text p {
+    padding: 0;
   }
 
   .lf-card:last-child {
