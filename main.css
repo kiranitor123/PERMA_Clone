@@ -312,12 +312,22 @@ a:hover {
   }
 
   .hl-card2 {
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-bottom: 7px;
   }
 
   .hl-card3 {
-    margin-left: 5px;
+    margin-left: 10px;
+  }
+
+  .ln-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .ld-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -347,6 +357,21 @@ a:hover {
 
   .black-bar-right-links {
     display: block;
+  }
+
+  .highlight-card:nth-child(1){
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+ url('./img/banner/Opal-796x417.jpg');
+  }
+
+  .ln-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .ld-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 }
