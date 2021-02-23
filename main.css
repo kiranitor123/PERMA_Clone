@@ -101,6 +101,18 @@ a:hover {
   background-color: violet;
 }
 
+.ld-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.ld-header a {
+  padding: 20px 10px 0 0;
+  color: #FF4422;
+  font-size: 16px;
+}
+
 .faColor {
   color: #333333;
 }
@@ -259,9 +271,6 @@ a:hover {
  url('./img/topics/distract/amplified-368x276.jpg');
 }
 
-
-
-
 .highlight-card:nth-child(1) {
  background-image:
  linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
@@ -291,7 +300,8 @@ a:hover {
   margin: 10px 20px;
 }
 
-.ln-card img, .ld-card img {
+.ln-card img, 
+.ld-card img {
   width: 5rem;
   height: 5rem;
   border-right: 1px solid #000;
@@ -320,6 +330,29 @@ a:hover {
   font-family: ARS Maquette, helvetica neue, arial, sans-serif;
   font-size: 12px;
   color: gray;
+}
+
+.ld-card-description {
+  margin-left: 10px;
+}
+
+.ld-card-description p:nth-of-type(1) {
+  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ld-card-description p:nth-of-type(2) {
+  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.ld-card-description p:nth-of-type(2) span {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
 }
 
 .lf-card-title {
@@ -463,6 +496,25 @@ a:hover {
 
   .ln-card-text h3,
   .ln-card-text p {
+    padding: 0;
+  }
+
+  .ld-card {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .ld-card img {
+    height: auto;
+    width: 100%;
+  }
+
+  .ld-card-text h3 {
+    margin-top: 5px;
+  }
+
+  .ld-card-text h3,
+  .ld-card-text p {
     padding: 0;
   }
 
