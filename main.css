@@ -36,8 +36,9 @@ a:hover {
   height: 30px;
   padding: 10px;
   border-left: 1px solid pink;
-  text-align: center;
-  vertical-align: middle;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -53,6 +54,9 @@ a:hover {
   margin: auto;
 }
 
+.logo-container {
+  display: contents;
+}
 .menu-bar {
   width: 100%;
   background-color: white;
@@ -87,15 +91,22 @@ a:hover {
 .black-bar-links {
   width: auto;
   background-color: black;
-  height: 2rem;
+  display: none;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.black-bar-right-links {
   display: none;
 }
 
 .white-bar-links {
   width: auto;
-  height: 2rem;
   background-color: white;
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .mobile-bar {
@@ -145,14 +156,39 @@ a:hover {
   color: #fff;
 }
 
-.highlight-card {
-  height: 200px;
-  background-color: aqua;
+.topic-cards {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
+  background-size: cover;
+}
+
+.highlight-card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+  padding: 10px;
+  background-size: cover;
+}
+
+.highlight-card:nth-child(1) {
+ background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/banner/Opal-796x417.jpg');
+}
+
+.highlight-card:nth-child(2) {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+  url(./img/banner/Untitled-design-2021-01-26T112752.webp);
+}
+
+.highlight-card:nth-child(3) {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+  url(./img/banner/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.webp);
 }
 
 .highlight-card:first-child {
@@ -163,12 +199,12 @@ a:hover {
   margin: 10px 20px;
 }
 
-.ln-card {
+.ln-card, .ld-card {
   display: flex;
   margin: 10px 20px;
 }
 
-.ln-card img {
+.ln-card img, .ld-card img {
   width: 5rem;
   height: 5rem;
   border-right: 1px solid #000;
@@ -218,42 +254,67 @@ a:hover {
   border-bottom: 1px solid;
 }
 
-.topics-card{
+.topics-card {
   display: flex;
   padding: 0 20px;
   background-color: aliceblue;
 }
 
+.hamburger-color {
+  color: red;
+}
+
 @media only screen and (min-width: 768px) {
   .white-bar-links {
-    display: block;
+    display: flex;
   }
+
   .black-bar-links {
-    display: block;
+    display: flex;
   }
+
   .menu-bar {
     display: none;
   }
+
   .footer-content {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
+  }
+
+  .menu-content p {
+    padding: 5px;
+    text-align: left;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .white-bar-links {
-    display: block;
+    display: flex;
   }
+
   .black-bar-links {
-    display: block;
+    display: flex;
   }
+
   .menu-bar, .logo {
     display: none;
   }
+
   .footer-content {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
   }
+
+  .menu-content p {
+    padding: 5px;
+    text-align: left;
+  }
+
+  .black-bar-right-links {
+    display: block;
+  }
+
 }
