@@ -165,7 +165,8 @@ a:hover {
   background-size: cover;
 }
 
-.highlight-card {
+.highlight-card,
+.topic-cards {
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -174,6 +175,63 @@ a:hover {
   padding: 10px;
   background-size: cover;
 }
+
+.topic-cards:nth-child(1) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/hardfork/1280px-GameStop_Globen-e1611550531323-368x276.jpg');
+}
+
+.topic-cards:nth-child(2) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/apps/Snag_3c8ecdc-368x276.webp');
+}
+
+.topic-cards:nth-child(3) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/gear/MacBook-USB-C-Feat-Img-730x365.jpg');
+}
+
+.topic-cards:nth-child(4) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/tech/vintage-robot-368x276.jpg');
+}
+
+.topic-cards:nth-child(5) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/creative/Untitled-design-13-368x276.webp');
+}
+
+.topic-cards:nth-child(6) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/podium/open-source-code-gq-368x276.webp');
+}
+
+.topic-cards:nth-child(7) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/insights/zoom-fundraising-gq-368x276.webp');
+}
+
+.topic-cards:nth-child(8) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/launch/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg');
+}
+
+.topic-cards:nth-child(9) {
+  background-image:
+ linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+ url('./img/topics/distract/amplified-368x276.jpg');
+}
+
+
+
 
 .highlight-card:nth-child(1) {
  background-image:
@@ -320,14 +378,15 @@ a:hover {
     margin-left: 10px;
   }
 
-  .ln-container {
+  .ln-container,
+  .ld-container,
+  .lf-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .ld-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .lf-card:last-child {
+    display: none;
   }
 }
 
@@ -364,14 +423,15 @@ a:hover {
  url('./img/banner/Opal-796x417.jpg');
   }
 
-  .ln-container {
+  .ln-container,
+  .ld-container,
+  .lf-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .ld-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .lf-card:last-child {
+    display: block;
   }
 
 }
