@@ -62,6 +62,7 @@ a:hover {
 .logo-container {
   display: contents;
 }
+
 .menu-bar {
   width: 100%;
   background-color: white;
@@ -81,15 +82,15 @@ a:hover {
 .highlights {
   height: auto;
   width: auto;
-  background-color: teal;
 }
 
 .latest-funding {
   width: auto;
-  background-color: violet;
+  margin: 20px;
 }
 
-.faColor {
+.faColor,
+.c-black {
   color: #333333;
 }
 
@@ -105,8 +106,7 @@ a:hover {
   display: none;
 }
 
-.black-bar-right-links a,
-.black-bar-left-links a { 
+.black-bar-right-links a, .black-bar-left-links a {
   font-family: ARS Maquette, helvetica neue, arial, sans-serif;
   color: gray;
   padding: 5px;
@@ -173,97 +173,83 @@ a:hover {
   color: #fff;
 }
 
-.topic-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 20px;
-  padding: 10px;
-  background-size: cover;
-}
-
-.highlight-card,
-.topic-cards {
+.highlight-card, .topic-cards {
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
   background-size: cover;
+  background-position: center;
 }
 
-.topic-cards:nth-child(1) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/hardfork/1280px-GameStop_Globen-e1611550531323-368x276.jpg');
+.image-highlight-container {
+  display: none;
 }
 
-.topic-cards:nth-child(2) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/apps/Snag_3c8ecdc-368x276.webp');
+.white, .white2 {
+  color: #fff;
 }
 
-.topic-cards:nth-child(3) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/gear/MacBook-USB-C-Feat-Img-730x365.jpg');
+.highlight-card, .white-t {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.topic-cards:nth-child(4) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/tech/vintage-robot-368x276.jpg');
+.topic-cards {
+  height: 400px;
 }
 
-.topic-cards:nth-child(5) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/creative/Untitled-design-13-368x276.webp');
+.info>span {
+  padding-right: 5px;
 }
 
-.topic-cards:nth-child(6) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/podium/open-source-code-gq-368x276.webp');
+.hard-fork {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/hardfork/1280px-GameStop_Globen-e1611550531323-368x276.jpg');
 }
 
-.topic-cards:nth-child(7) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/insights/zoom-fundraising-gq-368x276.webp');
+.apps {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/apps/Snag_3c8ecdc-368x276.webp');
 }
 
-.topic-cards:nth-child(8) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/launch/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg');
+.gear {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/gear/MacBook-USB-C-Feat-Img-730x365.jpg');
 }
 
-.topic-cards:nth-child(9) {
-  background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/topics/distract/amplified-368x276.jpg');
+.tech {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/tech/vintage-robot-368x276.jpg');
 }
 
+.creative {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/creative/Untitled-design-13-368x276.webp');
+}
 
+.podium {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/podium/open-source-code-gq-368x276.webp');
+}
 
+.insights {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/insights/zoom-fundraising-gq-368x276.webp');
+}
+
+.launch {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/launch/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg');
+}
+
+.distract {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/topics/distract/amplified-368x276.jpg');
+}
 
 .highlight-card:nth-child(1) {
- background-image:
- linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
- url('./img/banner/Opal-796x417.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url('./img/banner/Opal-796x417.jpg');
 }
 
 .highlight-card:nth-child(2) {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
-  url(./img/banner/Untitled-design-2021-01-26T112752.webp);
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url(./img/banner/Untitled-design-2021-01-26T112752.webp);
 }
 
 .highlight-card:nth-child(3) {
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)),
-  url(./img/banner/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.webp);
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.0), rgba(0, 0, 0, 1)), url(./img/banner/Gemini2-duplicates-monitor-alert-e1611566958933-796x420.webp);
 }
 
 .highlight-card:first-child {
@@ -304,7 +290,7 @@ a:hover {
 }
 
 .lf-card-content {
-  background-color: aqua;
+  background-color: rgba(255,68,34,.08);
   margin: 0;
   padding: 10px;
 }
@@ -314,19 +300,30 @@ a:hover {
   width: 60px;
   position: relative;
   float: left;
-  margin: 15px auto auto 25px;
+  margin: 15px;
 }
 
 .lf-card-part2, .lf-card-part3 {
-  display: flex;
-  flex-direction: column;
-  background-color: aliceblue;
+  background-color: rgba(255, 67, 34, 0.027);
   padding: 20px;
 }
 
+.lf-card-part2 div i {
+  padding-right: 10px;
+}
+
+.padd-10-0 {
+  padding: 10px 0;
+}
+
 .lf-card-part2 {
+  flex-direction: column;
   border-top: 1px solid;
   border-bottom: 1px solid;
+}
+
+.lf-card:last-child {
+  display: none;
 }
 
 .topics-card {
@@ -335,11 +332,25 @@ a:hover {
   background-color: aliceblue;
 }
 
-.search-color {
+.search-color,
+.c-gray {
   color: lightgray;
 }
 
-.hamburger-color {
+.margin-0 {
+  margin: 0;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+.hamburger-color,
+.lf-color {
   color: red;
 }
 
@@ -347,7 +358,6 @@ a:hover {
   .white-bar-links {
     display: flex;
   }
-
   .white-bar-left-link a {
     font-family: shentox, sans-serif;
     color: rgb(190, 190, 190);
@@ -355,40 +365,33 @@ a:hover {
     padding: 8px;
     font-weight: bold;
   }
-
   .black-bar-links {
     display: flex;
   }
-
   .black-bar-right-links {
     display: block;
   }
-
   .search-color {
     color: lightgray;
   }
-
   .menu-bar {
     display: none;
   }
-
   .footer-content {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
   }
-
   .menu-content p {
     padding: 5px;
     text-align: left;
   }
-
   .highlights {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    padding: 0 10px 10px 10px;
   }
-
   .highlight-card {
     margin: 0;
     height: auto;
@@ -398,32 +401,46 @@ a:hover {
     padding: 10px;
     background-size: cover;
   }
-
   .hl-card1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3;  
+    grid-row-end: 3;
   }
-
   .hl-card2 {
     margin-left: 10px;
     margin-bottom: 7px;
   }
-
   .hl-card3 {
     margin-left: 10px;
   }
-
-  .ln-container,
-  .ld-container,
-  .lf-container {
+  .ln-container, .ld-container, .lf-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
   }
-
   .lf-card:last-child {
     display: none;
+  }
+  .topic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .white {
+    font-size: 40px;
+  }
+  .white2 {
+    font-size: 20px;
+  }
+  .share-it {
+    display: none;
+  }
+
+  .lf-header-links{
+    display: flex;
+  }
+  .lf-header-links p a {
+    padding-right: 10px;
   }
 }
 
@@ -431,44 +448,56 @@ a:hover {
   .white-bar-links {
     display: flex;
   }
-
   .black-bar-links {
     display: flex;
   }
-
   .menu-bar, .logo {
     display: none;
   }
-
   .footer-content {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
   }
-
   .menu-content p {
     padding: 5px;
     text-align: left;
   }
-
   .black-bar-right-links {
     display: block;
   }
-
-  .highlight-card:nth-child(1){
-    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.4), rgba(0, 0, 0, 1)),
- url('./img/banner/Opal-796x417.jpg');
+  .highlights {
+    grid-template-rows: 250px 250px;
   }
-
-  .ln-container,
-  .ld-container,
-  .lf-container {
+  .highlight-card:nth-child(1) {
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.342), rgba(0, 0, 0, 1)), url('./img/banner/Opal-796x417.jpg');
+    justify-content: space-between;
+  }
+  .ln-container, .ld-container, .lf-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
   .lf-card:last-child {
     display: block;
   }
-
+  .topic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .image-highlight-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .image-highlight {
+    height: 80px;
+  }
+  .share-it {
+    display: contents;
+  }
+  .lf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
