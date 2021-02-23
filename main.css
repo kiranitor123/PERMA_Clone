@@ -159,7 +159,7 @@ a:hover {
 .social-icons {
   display: flex;
   flex-direction: column;
-  background-color: darkgray;
+  background-color: #131313;
 }
 
 .social-icons div:nth-of-type(1) {
@@ -179,10 +179,16 @@ a:hover {
   padding: 0 5px;
 }
 
+.footer-links a {
+  font-family: "shentox";
+  color: #AAA;
+  font-weight: bold;
+}
+
 .footer-content {
   background-color: #000;
   color: #fff;
-  border-top: 1px solid #fff;
+  border-top: 1px solid darkgray;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,10 +197,15 @@ a:hover {
 
 .footer-content>div>p {
   margin: 5px 0;
+  text-align: center;
 }
 
 .footer-content>div>a {
   color: #fff;
+}
+
+.footer-logo {
+  width: 10%;
 }
 
 .topic-cards {
@@ -520,6 +531,10 @@ a:hover {
 
   .lf-card:last-child {
     display: none;
+  }
+
+  .footer-content>div>p {
+    text-align: unset;
   }
 }
 
