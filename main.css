@@ -287,6 +287,38 @@ a:hover {
     padding: 5px;
     text-align: left;
   }
+
+  .highlights {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .highlight-card {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    background-size: cover;
+  }
+
+  .hl-card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;  
+  }
+
+  .hl-card2 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .hl-card3 {
+    margin-left: 5px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
