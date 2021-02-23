@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "shentox";
+  src: url('Shentox.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -42,7 +47,7 @@ a:hover {
 }
 
 .logo {
-  width: 40%;
+  width: 20%;
   background-color: black;
   height: auto;
   display: flex;
@@ -98,6 +103,18 @@ a:hover {
 
 .black-bar-right-links {
   display: none;
+}
+
+.black-bar-right-links a,
+.black-bar-left-links a { 
+  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
+  color: gray;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.black-bar-left-links a:first-child {
+  color: white;
 }
 
 .white-bar-links {
@@ -318,6 +335,10 @@ a:hover {
   background-color: aliceblue;
 }
 
+.search-color {
+  color: lightgray;
+}
+
 .hamburger-color {
   color: red;
 }
@@ -327,8 +348,24 @@ a:hover {
     display: flex;
   }
 
+  .white-bar-left-link a {
+    font-family: shentox, sans-serif;
+    color: rgb(190, 190, 190);
+    font-size: 15px;
+    padding: 8px;
+    font-weight: bold;
+  }
+
   .black-bar-links {
     display: flex;
+  }
+
+  .black-bar-right-links {
+    display: block;
+  }
+
+  .search-color {
+    color: lightgray;
   }
 
   .menu-bar {
