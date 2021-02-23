@@ -115,6 +115,20 @@ a:hover {
   font-size: 16px;
 }
 
+.black-bar-right-links a,
+.black-bar-left-links a {
+  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
+  color: gray;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  font-family: "shentox", sans-serif;
+  color: #aaa;
+  font-weight: bold;
+}
+
 .footer-content > div > a {
   color: #fff;
 }
@@ -129,20 +143,6 @@ a:hover {
 
 .black-bar-right-links {
   display: none;
-}
-
-.black-bar-right-links a,
-.black-bar-left-links a {
-  font-family: ARS Maquette, helvetica neue, arial, sans-serif;
-  color: gray;
-  padding: 5px;
-  font-size: 14px;
-}
-
-.footer-links a {
-  font-family: "shentox";
-  color: #aaa;
-  font-weight: bold;
 }
 
 .social-icons div a {
@@ -195,6 +195,12 @@ a:hover {
   flex-direction: column;
   align-items: center;
   font-size: 13px;
+}
+
+.ln-card-text p,
+.ln-card-text h3 {
+  margin: 0;
+  padding: 0 10px;
 }
 
 .footer-content > div > p {
@@ -313,12 +319,6 @@ a:hover {
 .ln-card-text {
   display: flex;
   flex-direction: column;
-}
-
-.ln-card-text p,
-.ln-card-text h3 {
-  margin: 0;
-  padding: 0 10px;
 }
 
 .ln-card-text h3 {
