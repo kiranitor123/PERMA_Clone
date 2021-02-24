@@ -11,7 +11,6 @@
 - Git
 - Github
 - VSCode
-- Nodejs
 - HTML5
 - CSS3
 - Flexbox
@@ -60,8 +59,8 @@ or
 👤 **Rolando**
 
 - GitHub: [@arthurborgesdev](https://github.com/kiranitor123)
-- Twitter: [@rolando](https://twitter.com/rolando)
-- LinkedIn: [Rolando](https://linkedin.com/in/arthurmoises)
+- Twitter: [@rolando](https://twitter.com/FayeRolando)
+- LinkedIn: [Rolando](https://www.linkedin.com/in/rolando-diego-alvarez-faye-b2b34a1a9/)
 
 👤 **Arthur Borges**
 
