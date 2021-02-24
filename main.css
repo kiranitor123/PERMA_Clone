@@ -246,11 +246,16 @@ a img {
 }
 
 .footer-logo {
-  width: 10%;
+  height: 10px;
+  padding-left: 5px;
 }
 
 .pad-10-0 {
   padding: 10px 0;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .highlight-card,
@@ -356,6 +361,7 @@ a img {
   height: 5rem;
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
+  padding-left: 0;
 }
 
 .ln-card-text {
@@ -371,7 +377,7 @@ a img {
 }
 
 .ld-card-description {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .ld-card-description p:nth-of-type(1) {
@@ -451,6 +457,10 @@ a img {
   color: lightgray;
 }
 
+.t-underline {
+  text-decoration: line-through;
+}
+
 .margin-0 {
   margin: 0;
 }
@@ -506,6 +516,7 @@ a img {
   }
 
   .footer-content {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2rem 0;
@@ -514,6 +525,7 @@ a img {
   .menu-content p {
     padding: 5px;
     text-align: left;
+    padding-left: 150px;
   }
 
   .highlights {
@@ -635,6 +647,10 @@ a img {
 }
 
 @media only screen and (min-width: 1024px) {
+  main{
+    margin: 20px 5%;
+  }
+
   .white-bar-links {
     display: flex;
   }
@@ -649,14 +665,16 @@ a img {
   }
 
   .footer-content {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     padding: 2rem 0;
   }
 
   .menu-content p {
     padding: 5px;
     text-align: left;
+    padding-left: 150px;
   }
 
   .black-bar-right-links {
@@ -677,6 +695,7 @@ a img {
   .lf-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
   }
 
   .ln-card-text h3 {
