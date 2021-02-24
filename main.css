@@ -51,7 +51,7 @@ ul li::before {
   content: "\2022";
   color: red;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
@@ -180,6 +180,12 @@ a img {
   padding: 0 5px;
 }
 
+.ln-card-text p,
+.ln-card-text p a {
+  color: gray;
+  font-size: 13px;
+}
+
 .black-bar-left-links a:first-child {
   color: white;
 }
@@ -232,13 +238,6 @@ a img {
   margin: 20px 0;
   padding: 0 10px;
 }
-
-.ln-card-text p,
-.ln-card-text p a  {
-  color: gray;
-  font-size: 13px;
-}
-
 
 .footer-content > div > p {
   margin: 5px 0;
@@ -647,7 +646,7 @@ a img {
 }
 
 @media only screen and (min-width: 1024px) {
-  main{
+  main {
     margin: 20px 5%;
   }
 
