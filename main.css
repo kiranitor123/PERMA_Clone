@@ -25,6 +25,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 footer {
@@ -39,6 +40,30 @@ a:link {
 
 a:hover {
   text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0 25px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+li {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+a img {
+  padding-left: 20px;
 }
 
 .nav-content {
@@ -97,7 +122,8 @@ a:hover {
   width: auto;
 }
 
-.latest-funding {
+.latest-funding,
+.latest-deals {
   width: auto;
   margin: 20px;
 }
@@ -110,7 +136,7 @@ a:hover {
 .ld-header {
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
+  padding: 0 10px;
 }
 
 .ld-header a {
@@ -201,8 +227,9 @@ a:hover {
 }
 
 .ln-card-text p,
-.ln-card-text h3 {
-  margin: 0;
+.ln-card-text h3,
+.topic-header {
+  margin: 20px 0;
   padding: 0 10px;
 }
 
@@ -233,6 +260,7 @@ a:hover {
   flex-direction: column;
   justify-content: flex-end;
   margin: 10px;
+  margin-bottom: 0;
   padding: 10px;
   background-size: cover;
   background-position: center;
@@ -412,8 +440,10 @@ a:hover {
 
 .topics-card {
   display: flex;
-  padding: 0 20px;
-  background-color: aliceblue;
+  margin: 0 10px;
+  padding: 10px;
+  padding-right: 0;
+  background-color: #fef4f3;
 }
 
 .search-color,
@@ -427,6 +457,14 @@ a:hover {
 
 .font-18 {
   font-size: 18px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
 }
 
 .font-11 {
