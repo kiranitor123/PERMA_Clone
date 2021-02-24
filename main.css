@@ -215,6 +215,10 @@ a:hover {
   width: 10%;
 }
 
+.pad-10-0 {
+  padding: 10px 0;
+}
+
 .highlight-card,
 .topic-cards {
   height: 200px;
