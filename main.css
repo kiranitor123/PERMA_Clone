@@ -20,8 +20,11 @@ body {
   padding: 0;
 }
 
-nav {
+.top-nav {
   background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 footer {
@@ -89,6 +92,7 @@ a:hover {
 }
 
 .highlights {
+  margin-top: 110px;
   height: auto;
   width: auto;
 }
