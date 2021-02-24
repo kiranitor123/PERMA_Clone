@@ -116,7 +116,6 @@ a:hover {
 .ld-header a {
   padding: 20px 10px 0 0;
   color: #f42;
-  font-size: 16px;
 }
 
 .black-bar-right-links a,
@@ -428,6 +427,8 @@ a:hover {
   color: red;
 }
 
+
+
 @media only screen and (min-width: 768px) {
   .white-bar-links {
     display: flex;
@@ -532,10 +533,11 @@ a:hover {
 
   .lf-header-links {
     display: flex;
+    align-items: center;
   }
 
   .lf-header-links p a {
-    padding-right: 10px;
+    padding-right: 5px;
   }
 
   .ln-card {
@@ -577,6 +579,12 @@ a:hover {
 
   .footer-content > div > p {
     text-align: unset;
+  }
+
+  .pipe1::after,
+  .pipe2::after {
+    content: " | ";
+    font-size: 20px;
   }
 }
 
@@ -652,5 +660,19 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .lf-header-links {
+    flex-direction: row-reverse;
+  }
+
+  .pipe2::after,
+  .pipe3::after {
+    content: " | ";
+    font-size: 20px;
+  }
+
+  .pipe1::after {
+    content: "";
   }
 }
