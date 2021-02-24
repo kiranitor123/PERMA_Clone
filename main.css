@@ -431,8 +431,6 @@ a:hover {
   color: red;
 }
 
-
-
 @media only screen and (min-width: 768px) {
   .white-bar-links {
     display: flex;
