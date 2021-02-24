@@ -207,6 +207,11 @@ a:hover {
   padding: 0 10px;
 }
 
+.ln-card-text p {
+  color: gray;
+  font-size: 13px;
+}
+
 .footer-content > div > p {
   margin: 5px 0;
   text-align: center;
