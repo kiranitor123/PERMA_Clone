@@ -4,7 +4,7 @@
 
 > This is a project for us to learn about CSS Grid, and media queries. We had to develop a full clone of TNW website, making it responsive through mobile, tablet and desktop.
 
-![screenshot-of-tnw-website](./tnw-arthur-rolando.png)
+![screenshot-of-tnw-website](./tnw-rolando-arthur.png)
 
 ## Built With
 
@@ -58,7 +58,7 @@ or
 
 👤 **Rolando**
 
-- GitHub: [@arthurborgesdev](https://github.com/kiranitor123)
+- GitHub: [@Rolando](https://github.com/kiranitor123)
 - Twitter: [@rolando](https://twitter.com/FayeRolando)
 - LinkedIn: [Rolando](https://www.linkedin.com/in/rolando-diego-alvarez-faye-b2b34a1a9/)
 
